@@ -1,0 +1,169 @@
+<html>
+<head>
+<style>
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+body {
+	margin-left: 30px;
+	margin-top: 30px;
+	margin-bottom: 80px;
+	background: #808080;
+}
+.imgProfile{
+	height: 25%;
+	width: 50%;
+}
+.main {
+	width: 550px;
+	padding-top: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 50px;
+	background: #ffffff;
+}
+
+h2 {
+  	font-family: "Open Sans", Arial;
+	font-size: 20pt;
+	margin-bottom: 0px;
+}
+
+h3 {
+  	font-family: "Open Sans", Arial;
+    font-weight: bold;
+	font-size: 12pt;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+h4 {
+  	font-family: "Open Sans", Arial;
+    font-weight: normal;
+	font-size: 11pt;
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+
+img {
+	margin-top: 20px;
+	margin-top: 10px;
+}
+
+.container {
+    width:550px;
+    border:1px solid #d0d0d0;
+}
+.container div {
+    width:537;
+	padding: 20px;
+}
+
+.desc {
+    font-weight: normal;
+	margin-left: 10px;
+	font-size: 9pt;
+}
+
+a:link {
+    color: #806020;
+}
+
+a:visited {
+    color: #000000;
+}
+
+a:hover {
+    color: #f0a040;
+}
+
+.container .header {
+    background-color:#f0f0f0;
+    padding: 3px;
+    padding-left: 10px;
+    cursor: pointer;
+  	font-family: "Open Sans", Arial;
+    font-weight: bold;
+	font-size: 11pt;
+}
+.container .content {
+    display: none;
+	width: 500px;
+    padding : 25px;
+  	font-family: "Open Sans", Arial;
+	font-size: 10pt;
+}
+	
+</style>
+</head>
+<body>
+	<div class="main">
+	<center>
+	<h2>Tobias Onoufriou</h2>
+	<p><br/></p>
+	</center>
+	<div class="container">
+	    <div class="header"><span>About</span></div>
+	    <div class="content">
+		<img src="tobi.jpg" class="imgProfile"/>
+			<p>
+					A Computer science student started programming at the age of 14 as a hobby, this started off with me learning C++. Which has then led to me having an interest in games programming and anything to do with games which come down to network programming, backend programming for game engines and gameplay. I am currently living in London and going to Brunel University London and enjoy playing games, programming and producing music.
+			</p>
+	    </div>
+	</div>
+	<p style="margin-bottom: 25px;"/>
+	<div class="container">
+	    <div class="header"><span>AR Exploration Game</span><span class="desc"> Network Programming and Unity Gameplay Programming — Work In Progress</span></div>
+	    <div class="content">
+		<img src="WOSImage.png"/>
+		<p>
+				This AR Game was an idea which I upheld due to my current interest into AR games, this project I am working with two other friends Ivan Tomovic and Sebastian Adamov which are both creating assets. On this project I am using Node.js and Typescript which is the server side component of the game, which uses Socket.IO and Mongo which is where all my data is stored and is currently running on the Google Cloud. For the game itself, we are using Unity as the there was a free Map API called Mapbox that any other engine didn’t have.
+		</p>
+		<p>
+				The vision for this project was inspired by World of Warcraft and Diablo but put into a real-world perspective and to give real world opportunities for community building and friendship making. This project is currently still in development.
+		</p>
+		<p>
+		<a href="https://www.geforce.com/hardware/technology/physx" target="_blank">Github</a>
+		</p>
+	    </div>
+	</div>
+	<div class="container">
+			<div class="header"><span>LED Cube Helmet</span><span class="desc">Java and Arduino</span></div>
+			<div class="content">
+			<img src="meqon.png"/>
+			<p>
+		
+			</p>
+			<p>
+			<a href="https://www.geforce.com/hardware/technology/physx" target="_blank">Github</a>
+			</p>
+			</div>
+		</div>
+	<p style="margin-bottom: 25px;"/>
+	<div class="container">
+	    <div class="header"><span>Contact</span></div>
+	    <div class="content">
+		<p>
+			E-mail: tobias.pellegrini@hotmail.com
+			<br/>
+			Github: <a href="https://github.com/TobiasOnoufriou" target="_blank">TobiasOnoufriou</a>
+		</p>
+	    </div>
+	</div>
+</div>
+		
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script>
+$(".header").click(function () {
+    $header = $(this);
+    //getting the next element
+    $content = $header.next();
+    //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
+    $content.slideToggle(100, function () {
+        //execute this after slideToggle is done
+        //change text of header based on visibility of content div
+        $header.text(function () {
+        });
+    });
+
+});
+</script>
+</body>
+</html>
